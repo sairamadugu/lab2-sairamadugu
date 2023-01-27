@@ -4,9 +4,35 @@ Information: Updating design information... (UID-85)
 Report : qor
 Design : fifo1_sram
 Version: Q-2019.12-SP3
-Date   : Thu Jan 26 19:47:46 2023
+Date   : Thu Jan 26 23:12:15 2023
 ****************************************
 
+
+  Timing Path Group 'INPUTS'
+  -----------------------------------
+  Levels of Logic:              23.00
+  Critical Path Length:          1.59
+  Critical Path Slack:           0.29
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'OUTPUTS'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          1.65
+  Critical Path Slack:           0.35
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
 
   Timing Path Group 'rclk'
   -----------------------------------
@@ -78,12 +104,12 @@ Date   : Thu Jan 26 19:47:46 2023
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.04
-  Logic Optimization:                  0.09
-  Mapping Optimization:                0.72
+  Resource Sharing:                    0.05
+  Logic Optimization:                  0.10
+  Mapping Optimization:                0.68
   -----------------------------------------
-  Overall Compile Time:                7.76
-  Overall Compile Wall Clock Time:     8.51
+  Overall Compile Time:                7.93
+  Overall Compile Wall Clock Time:     8.71
 
   --------------------------------------------------------------------
 

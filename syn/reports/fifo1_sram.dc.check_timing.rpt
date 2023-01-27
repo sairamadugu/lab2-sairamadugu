@@ -14,8 +14,6 @@ wdata_in[3]
 wdata_in[2]
 wdata_in[1]
 wdata_in[0]
-winc
-rinc
 
 Information: Checking unconstrained_endpoints...
 
@@ -23,14 +21,6 @@ Warning: The following end-points are not constrained for maximum delay.
 
 End point
 ---------------
-rdata[0]
-rdata[1]
-rdata[2]
-rdata[3]
-rdata[4]
-rdata[5]
-rdata[6]
-rdata[7]
 rempty
 wdata_reg_0_/D
 wdata_reg_1_/D
@@ -40,7 +30,6 @@ wdata_reg_4_/D
 wdata_reg_5_/D
 wdata_reg_6_/D
 wdata_reg_7_/D
-wfull
 
 Information: Checking pulse_clock_cell_type...
 

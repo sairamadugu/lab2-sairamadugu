@@ -26,7 +26,16 @@ create_clock -name "rclk" -period $rclk_period rclk
 #Add the new clock.  Make it 1/2 the wclk period since it is called wclk2x
 create_clock -name "wclk2x" -period $wclk2x_period wclk2x
 
+et_input_delay 0.0 wdata_in* -clock wclk2x
+set_input_delay 0.0 winc -clock wclk
+set_input_delay 0.0 rinc -clock rclk
+set_output_delay 0.0 rdata* -clock rclk
+set_output_delay 0.0 { empty } -clock rclk
+set_output_delay 0.0 { wfull } -clock wclk
 
+set_input_delay 0.0 rrst_n -clock rclk
+set_input_delay 0.0 rrst_n -clock wclk -add_delay
+set_input_delay 0.0 rrst_n -clock rclk -add_delay
 
 set_false_path -from [get_clocks wclk ] -to [get_clocks rclk]
 set_false_path -from [get_clocks rclk ] -to [ get_clocks wclk]
